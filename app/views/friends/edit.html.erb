@@ -1,0 +1,18 @@
+<h1>Editing friend</h1>
+
+<%= render "form", friend: @friend %>
+
+<br>
+
+<div><p>
+  <table>
+    <tr>
+      <td> <%= link_to "Show", @friend, class:"btn btn-secondary"%> </td>
+      <td> <%= button_to "Delete", @friend, method: :delete,class:"btn btn-danger", data:{ confirm: 'Are you sure?' } %></td>
+      <td>  <%= link_to "Back", friends_path,class:"btn btn-secondary" %>
+      </td>
+      
+    </tr>
+  </table>
+ </p>
+</div>
